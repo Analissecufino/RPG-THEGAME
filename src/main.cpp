@@ -6,8 +6,8 @@
 #include <string>
 #include <cstdlib>
 #include <ctime>
-#include "character.h"
-#include "monster.h"
+#include "../include/character.h"
+#include "../include/monster.h"
 
 void drinkPotion(Character hero) {
     if (hero.potions <= 0) {
@@ -16,7 +16,7 @@ void drinkPotion(Character hero) {
     }
     hero.hp += 10;
     hero.potions--;
-    std::cout << hero.name << " drinks a potion!\n";
+    std::cout << std::endl << hero.name << " drinks a potion! Health increased by 10! \n";
 }
 
 int main() {
