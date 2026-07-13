@@ -19,6 +19,7 @@ If the game you're running doesn't do the above; that's a bug. Go hunt it.
 
 ```
 g++ -Wall -o rpg main.cpp character.cpp monster.cpp
+
 ```
 
 Always compile with `-Wall`. The compiler is your first party member read every
@@ -36,12 +37,11 @@ error **and every warning** from top to bottom!
   2. **Cause** — the actual mistake in the code (file + line).
   3. **Fix** — what you changed and why it works.
 
-## Hints (use sparingly)
+## Hints (Use Sparingly)
 
 - You cannot see the runtime bugs until the program builds. Fix compiler errors
-  first, then linker errors, then play.
-- If input ever starts "skipping" or looping strangely, think carefully about
-  what `cin >> ` actually reads ... and what it leaves behind.
+  first, then play.
+- Pay attention to outputs, not everything is working the way its meant to.
 
 Good luck, adventurer. 🗡️
 
